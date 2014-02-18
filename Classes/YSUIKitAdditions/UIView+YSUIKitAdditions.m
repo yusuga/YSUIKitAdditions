@@ -12,13 +12,13 @@
 
 /* http://stackoverflow.com/questions/1823317/get-the-current-first-responder-without-using-a-private-api/1823360#1823360 */
 
-- (id)findFirstResponder
+- (id)ys_findFirstResponder
 {
     if (self.isFirstResponder) {
         return self;
     }
     for (UIView *subView in self.subviews) {
-        id responder = [subView findFirstResponder];
+        id responder = [subView ys_findFirstResponder];
         if (responder) return responder;
     }
     return nil;

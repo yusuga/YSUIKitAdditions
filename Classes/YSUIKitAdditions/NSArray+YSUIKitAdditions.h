@@ -10,6 +10,6 @@
 
 @interface NSArray (YSUIKitAdditions)
 
-- (NSArray *)map:(id (^)(id obj, NSUInteger idx))block;
+- (NSArray *)ys_map:(id (^)(id obj, NSUInteger idx))block;
 
 @end

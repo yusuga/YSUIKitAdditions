@@ -10,7 +10,7 @@
 
 @implementation NSArray (YSUIKitAdditions)
 
-- (NSArray *)map:(id (^)(id obj, NSUInteger idx))block
+- (NSArray *)ys_map:(id (^)(id obj, NSUInteger idx))block
 {
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:[self count]];
     for (int i = 0; i < [self count]; i++) {

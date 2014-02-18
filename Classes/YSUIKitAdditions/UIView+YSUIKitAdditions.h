@@ -10,6 +10,6 @@
 
 @interface UIView (YSUIKitAdditions)
 
-- (id)findFirstResponder;
+- (id)ys_findFirstResponder;
 
 @end
