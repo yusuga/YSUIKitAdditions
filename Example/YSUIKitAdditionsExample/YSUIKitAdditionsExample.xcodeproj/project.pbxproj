@@ -22,6 +22,7 @@
 		B84DE0881894E14200DD2DE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B84DE0861894E14200DD2DE8 /* InfoPlist.strings */; };
 		B84DE08A1894E14200DD2DE8 /* YSUIKitAdditionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B84DE0891894E14200DD2DE8 /* YSUIKitAdditionsExampleTests.m */; };
 		B84DE0961894E23300DD2DE8 /* UIView+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B84DE0951894E23300DD2DE8 /* UIView+YSUIKitAdditions.m */; };
+		B8B0EC6618BEE494008E0B75 /* UIImage+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B0EC6518BEE494008E0B75 /* UIImage+YSUIKitAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		B84DE0891894E14200DD2DE8 /* YSUIKitAdditionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSUIKitAdditionsExampleTests.m; sourceTree = "<group>"; };
 		B84DE0941894E23300DD2DE8 /* UIView+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B84DE0951894E23300DD2DE8 /* UIView+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YSUIKitAdditions.m"; sourceTree = "<group>"; };
+		B8B0EC6418BEE494008E0B75 /* UIImage+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YSUIKitAdditions.h"; sourceTree = "<group>"; };
+		B8B0EC6518BEE494008E0B75 /* UIImage+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 			children = (
 				B84DE0941894E23300DD2DE8 /* UIView+YSUIKitAdditions.h */,
 				B84DE0951894E23300DD2DE8 /* UIView+YSUIKitAdditions.m */,
+				B8B0EC6418BEE494008E0B75 /* UIImage+YSUIKitAdditions.h */,
+				B8B0EC6518BEE494008E0B75 /* UIImage+YSUIKitAdditions.m */,
 			);
 			name = YSUIKitAdditions;
 			path = ../../Classes/YSUIKitAdditions;
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B0EC6618BEE494008E0B75 /* UIImage+YSUIKitAdditions.m in Sources */,
 				B84DE0751894E14200DD2DE8 /* ViewController.m in Sources */,
 				B84DE0961894E23300DD2DE8 /* UIView+YSUIKitAdditions.m in Sources */,
 				B84DE06F1894E14200DD2DE8 /* AppDelegate.m in Sources */,
