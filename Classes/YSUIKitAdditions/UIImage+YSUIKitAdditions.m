@@ -12,11 +12,16 @@
 
 + (UIImage *)ys_imageFromColor:(UIColor *)color
 {
-    /* 
-     http://stackoverflow.com/questions/990976/how-to-create-a-colored-1x1-uiimage-on-the-iphone-dynamically 
+    return [self ys_imageFromColor:color withSize:CGSizeMake(1.f, 1.f)];
+}
+
++ (UIImage *)ys_imageFromColor:(UIColor *)color withSize:(CGSize)size
+{
+    /*
+     http://stackoverflow.com/questions/990976/how-to-create-a-colored-1x1-uiimage-on-the-iphone-dynamically
      */
     
-    CGRect rect = CGRectMake(0., 0., 1., 1.);
+    CGRect rect = CGRectMake(0.f, 0.f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [color CGColor]);

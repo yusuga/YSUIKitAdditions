@@ -11,5 +11,6 @@
 @interface UIImage (YSUIKitAdditions)
 
 + (UIImage *)ys_imageFromColor:(UIColor *)color;
++ (UIImage *)ys_imageFromColor:(UIColor *)color withSize:(CGSize)size;
 
 @end
