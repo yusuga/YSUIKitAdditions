@@ -12,4 +12,8 @@
 
 - (id)ys_findFirstResponder;
 
+- (void)ys_setHitTestEdgeInsets:(UIEdgeInsets)hitTestEdgeInsets;
+- (UIEdgeInsets)ys_hitTestEdgeInsets;
+- (CGRect)ys_hitFrame;
+
 @end
