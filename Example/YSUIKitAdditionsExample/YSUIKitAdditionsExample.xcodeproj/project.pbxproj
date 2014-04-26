@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8223484190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m */; };
+		B8223487190BB44F0081A8D0 /* testUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B8223486190BB44F0081A8D0 /* testUIColor.m */; };
 		B84DE05F1894E14200DD2DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84DE05E1894E14200DD2DE8 /* Foundation.framework */; };
 		B84DE0611894E14200DD2DE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84DE0601894E14200DD2DE8 /* CoreGraphics.framework */; };
 		B84DE0631894E14200DD2DE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84DE0621894E14200DD2DE8 /* UIKit.framework */; };
@@ -20,7 +22,6 @@
 		B84DE07F1894E14200DD2DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84DE05E1894E14200DD2DE8 /* Foundation.framework */; };
 		B84DE0801894E14200DD2DE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84DE0621894E14200DD2DE8 /* UIKit.framework */; };
 		B84DE0881894E14200DD2DE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B84DE0861894E14200DD2DE8 /* InfoPlist.strings */; };
-		B84DE08A1894E14200DD2DE8 /* YSUIKitAdditionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B84DE0891894E14200DD2DE8 /* YSUIKitAdditionsExampleTests.m */; };
 		B84DE0961894E23300DD2DE8 /* UIView+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B84DE0951894E23300DD2DE8 /* UIView+YSUIKitAdditions.m */; };
 		B8B0EC6618BEE494008E0B75 /* UIImage+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B0EC6518BEE494008E0B75 /* UIImage+YSUIKitAdditions.m */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B8223483190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YSUIKitAdditions.h"; sourceTree = "<group>"; };
+		B8223484190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YSUIKitAdditions.m"; sourceTree = "<group>"; };
+		B8223486190BB44F0081A8D0 /* testUIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testUIColor.m; sourceTree = "<group>"; };
 		B84DE05B1894E14200DD2DE8 /* YSUIKitAdditionsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSUIKitAdditionsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84DE05E1894E14200DD2DE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B84DE0601894E14200DD2DE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +58,6 @@
 		B84DE07D1894E14200DD2DE8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B84DE0851894E14200DD2DE8 /* YSUIKitAdditionsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSUIKitAdditionsExampleTests-Info.plist"; sourceTree = "<group>"; };
 		B84DE0871894E14200DD2DE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B84DE0891894E14200DD2DE8 /* YSUIKitAdditionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSUIKitAdditionsExampleTests.m; sourceTree = "<group>"; };
 		B84DE0941894E23300DD2DE8 /* UIView+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B84DE0951894E23300DD2DE8 /* UIView+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B8B0EC6418BEE494008E0B75 /* UIImage+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YSUIKitAdditions.h"; sourceTree = "<group>"; };
@@ -144,7 +147,7 @@
 		B84DE0831894E14200DD2DE8 /* YSUIKitAdditionsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				B84DE0891894E14200DD2DE8 /* YSUIKitAdditionsExampleTests.m */,
+				B8223486190BB44F0081A8D0 /* testUIColor.m */,
 				B84DE0841894E14200DD2DE8 /* Supporting Files */,
 			);
 			path = YSUIKitAdditionsExampleTests;
@@ -166,6 +169,8 @@
 				B84DE0951894E23300DD2DE8 /* UIView+YSUIKitAdditions.m */,
 				B8B0EC6418BEE494008E0B75 /* UIImage+YSUIKitAdditions.h */,
 				B8B0EC6518BEE494008E0B75 /* UIImage+YSUIKitAdditions.m */,
+				B8223483190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.h */,
+				B8223484190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m */,
 			);
 			name = YSUIKitAdditions;
 			path = ../../Classes/YSUIKitAdditions;
@@ -270,6 +275,7 @@
 			files = (
 				B8B0EC6618BEE494008E0B75 /* UIImage+YSUIKitAdditions.m in Sources */,
 				B84DE0751894E14200DD2DE8 /* ViewController.m in Sources */,
+				B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */,
 				B84DE0961894E23300DD2DE8 /* UIView+YSUIKitAdditions.m in Sources */,
 				B84DE06F1894E14200DD2DE8 /* AppDelegate.m in Sources */,
 				B84DE06B1894E14200DD2DE8 /* main.m in Sources */,
@@ -280,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B84DE08A1894E14200DD2DE8 /* YSUIKitAdditionsExampleTests.m in Sources */,
+				B8223487190BB44F0081A8D0 /* testUIColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
