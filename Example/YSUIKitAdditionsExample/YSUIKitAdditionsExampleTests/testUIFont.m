@@ -42,12 +42,13 @@
 {
     for (UIFont *font in [self allFont]) {
         UIFont *convertedFont = [font ys_convertedNormalFont];
-        if (convertedFont.fontDescriptor.symbolicTraits &
+        if (convertedFont == nil &&
+            font.fontDescriptor.symbolicTraits &
             (UIFontDescriptorTraitBold | UIFontDescriptorTraitItalic ^ (font.fontDescriptor.symbolicTraits & UIFontDescriptorTraitItalic))) {
-            for (NSString *name in [UIFont fontNamesForFamilyName:convertedFont.familyName]) {
+            for (NSString *name in [UIFont fontNamesForFamilyName:font.familyName]) {
                 UIFont *font = [UIFont fontWithName:name size:1.f];
                 if (!(font.fontDescriptor.symbolicTraits & (UIFontDescriptorTraitBold | UIFontDescriptorTraitItalic))) {
-                    XCTAssert(0, @"convertedFont: %@, symbolicTraits: %@, fontNames: %@", convertedFont.fontName, NSStringFromUIFontDescriptorSymbolicTraits(font.fontDescriptor.symbolicTraits), [UIFont fontNamesForFamilyName:convertedFont.familyName]);
+                    XCTAssert(0, @"font: %@, symbolicTraits: %@, fontNames: %@", font.fontName, NSStringFromUIFontDescriptorSymbolicTraits(font.fontDescriptor.symbolicTraits), [UIFont fontNamesForFamilyName:font.familyName]);
                 }
             }
         }
@@ -58,11 +59,11 @@
 {
     for (UIFont *font in [self allFont]) {
         UIFont *convertedFont = [font ys_convertedBoldFont];
-        if (!(convertedFont.fontDescriptor.symbolicTraits & UIFontDescriptorTraitBold)) {
-            for (NSString *name in [UIFont fontNamesForFamilyName:convertedFont.familyName]) {
+        if (convertedFont == nil && !(font.fontDescriptor.symbolicTraits & UIFontDescriptorTraitBold)) {
+            for (NSString *name in [UIFont fontNamesForFamilyName:font.familyName]) {
                 UIFont *font = [UIFont fontWithName:name size:1.f];
                 if (font.fontDescriptor.symbolicTraits & UIFontDescriptorTraitBold) {
-                    XCTAssert(0, @"convertedFont: %@, fontNames: %@", convertedFont.fontName, [UIFont fontNamesForFamilyName:convertedFont.familyName]);
+                    XCTAssert(0, @"font: %@, fontNames: %@", font.fontName, [UIFont fontNamesForFamilyName:font.familyName]);
                 }
             }
         }
@@ -73,11 +74,11 @@
 {
     for (UIFont *font in [self allFont]) {
         UIFont *convertedFont = [font ys_convertedItalicFont];
-        if (!(convertedFont.fontDescriptor.symbolicTraits & UIFontDescriptorTraitItalic)) {
-            for (NSString *name in [UIFont fontNamesForFamilyName:convertedFont.familyName]) {
+        if (convertedFont == nil && !(font.fontDescriptor.symbolicTraits & UIFontDescriptorTraitItalic)) {
+            for (NSString *name in [UIFont fontNamesForFamilyName:font.familyName]) {
                 UIFont *font = [UIFont fontWithName:name size:1.f];
                 if (font.fontDescriptor.symbolicTraits & UIFontDescriptorTraitItalic) {
-                    XCTAssert(0, @"convertedFont: %@, fontNames: %@", convertedFont.fontName, [UIFont fontNamesForFamilyName:convertedFont.familyName]);
+                    XCTAssert(0, @"font: %@, fontNames: %@", font.fontName, [UIFont fontNamesForFamilyName:font.familyName]);
                 }
             }
         }
@@ -89,11 +90,11 @@
     UIFontDescriptorSymbolicTraits existingTraits = UIFontDescriptorTraitBold | UIFontDescriptorTraitItalic;
     for (UIFont *font in [self allFont]) {
         UIFont *convertedFont = [font ys_convertedBoldItalicFont];
-        if ((convertedFont.fontDescriptor.symbolicTraits & existingTraits) != existingTraits) {
-            for (NSString *name in [UIFont fontNamesForFamilyName:convertedFont.familyName]) {
+        if (convertedFont == nil && (font.fontDescriptor.symbolicTraits & existingTraits) != existingTraits) {
+            for (NSString *name in [UIFont fontNamesForFamilyName:font.familyName]) {
                 UIFont *font = [UIFont fontWithName:name size:1.f];
                 if ((font.fontDescriptor.symbolicTraits & existingTraits) == existingTraits) {
-                    XCTAssert(0, @"convertedFont: %@, fontNames: %@", convertedFont.fontName, [UIFont fontNamesForFamilyName:convertedFont.familyName]);
+                    XCTAssert(0, @"font: %@, fontNames: %@", font.fontName, [UIFont fontNamesForFamilyName:font.familyName]);
                 }
             }
         }
