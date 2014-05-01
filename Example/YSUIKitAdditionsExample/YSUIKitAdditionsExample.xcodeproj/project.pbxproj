@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82085661911445B00F42D6E /* UIFont+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B82085651911445B00F42D6E /* UIFont+YSUIKitAdditions.m */; };
+		B82085681911467F00F42D6E /* testUIFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B82085671911467F00F42D6E /* testUIFont.m */; };
 		B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8223484190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m */; };
 		B8223487190BB44F0081A8D0 /* testUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B8223486190BB44F0081A8D0 /* testUIColor.m */; };
 		B84DE05F1894E14200DD2DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84DE05E1894E14200DD2DE8 /* Foundation.framework */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B82085641911445B00F42D6E /* UIFont+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+YSUIKitAdditions.h"; sourceTree = "<group>"; };
+		B82085651911445B00F42D6E /* UIFont+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+YSUIKitAdditions.m"; sourceTree = "<group>"; };
+		B82085671911467F00F42D6E /* testUIFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testUIFont.m; sourceTree = "<group>"; };
 		B8223483190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B8223484190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B8223486190BB44F0081A8D0 /* testUIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testUIColor.m; sourceTree = "<group>"; };
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				B8223486190BB44F0081A8D0 /* testUIColor.m */,
+				B82085671911467F00F42D6E /* testUIFont.m */,
 				B84DE0841894E14200DD2DE8 /* Supporting Files */,
 			);
 			path = YSUIKitAdditionsExampleTests;
@@ -171,6 +177,8 @@
 				B8B0EC6518BEE494008E0B75 /* UIImage+YSUIKitAdditions.m */,
 				B8223483190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.h */,
 				B8223484190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m */,
+				B82085641911445B00F42D6E /* UIFont+YSUIKitAdditions.h */,
+				B82085651911445B00F42D6E /* UIFont+YSUIKitAdditions.m */,
 			);
 			name = YSUIKitAdditions;
 			path = ../../Classes/YSUIKitAdditions;
@@ -273,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82085661911445B00F42D6E /* UIFont+YSUIKitAdditions.m in Sources */,
 				B8B0EC6618BEE494008E0B75 /* UIImage+YSUIKitAdditions.m in Sources */,
 				B84DE0751894E14200DD2DE8 /* ViewController.m in Sources */,
 				B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */,
@@ -286,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82085681911467F00F42D6E /* testUIFont.m in Sources */,
 				B8223487190BB44F0081A8D0 /* testUIColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

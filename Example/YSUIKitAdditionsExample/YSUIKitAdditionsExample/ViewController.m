@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
     
-    [self.button ys_setHitTestEdgeInsets:UIEdgeInsetsMake(-50.f, -50.f, -50.f, -50.f)];
+    [self.button ys_setHitTestEdgeInsets:UIEdgeInsetsMake(-50.f, -50.f, -50.f, -50.f)];        
 }
 
 - (void)didReceiveMemoryWarning
