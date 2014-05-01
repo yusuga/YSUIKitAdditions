@@ -92,9 +92,6 @@ NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTra
             NSString *addStr;
             switch (class) {
                     /* Font appearance info (upper 16 bits of UIFontDescriptorSymbolicTraits */
-                case UIFontDescriptorClassMask: // = 0xF0000000,
-                    addStr = @"Mask";
-                    break;
                 case UIFontDescriptorClassUnknown: // = 0u << 28,
                     addStr = @"Unknown";
                     break;
