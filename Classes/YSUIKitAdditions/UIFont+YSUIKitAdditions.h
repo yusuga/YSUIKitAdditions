@@ -12,7 +12,7 @@ extern NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymb
 
 @interface UIFont (YSUIKitAdditions)
 
-// when can not convert it, return self
+// when can not convert it, return nil
 - (UIFont*)ys_convertedNormalFont;      // e.g. bold -> normal, italic -> normal, bold italic -> italic
 - (UIFont*)ys_convertedBoldFont;        // e.g. normal -> bold, italic -> bold italic
 - (UIFont*)ys_convertedItalicFont;      // e.g. normal -> italic, bold -> bold italic

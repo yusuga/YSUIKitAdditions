@@ -209,7 +209,7 @@ NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTra
     }
     // match font does not exist.
     LOG_UIFont(@"not exist: self.fontName: %@, fontNames: %@", self.fontName, [UIFont fontNamesForFamilyName:self.familyName]);
-    return self;
+    return nil;
 }
 
 - (UIFont*)_ys_convertedNormalFont
@@ -244,7 +244,7 @@ NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTra
     }
     // match font does not exist.
     LOG_UIFont(@"not exist: fontName: %@, fontNames: %@", self.fontName, [UIFont fontNamesForFamilyName:self.familyName]);
-    return convertedFont;
+    return nil;
 }
 
 @end
