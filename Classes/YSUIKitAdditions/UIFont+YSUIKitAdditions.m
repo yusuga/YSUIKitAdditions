@@ -7,6 +7,7 @@
 //
 
 #import "UIFont+YSUIKitAdditions.h"
+@import CoreText;
 
 #if DEBUG
     #if 1
@@ -139,6 +140,8 @@ NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTra
 
 @implementation UIFont (YSUIKitAdditions)
 
+#pragma mark - convert
+
 - (UIFont *)ys_convertedNormalFont
 {
     return [self ys_convertedFontWithBold:NO italic:NO];
@@ -245,6 +248,38 @@ NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTra
     // match font does not exist.
     LOG_UIFont(@"not exist: fontName: %@, fontNames: %@", self.fontName, [UIFont fontNamesForFamilyName:self.familyName]);
     return nil;
+}
+
+#pragma mark - language
+
+- (BOOL)ys_hasJapaneseLanguage
+{
+    // ignore chinese language.
+    return [self ys_hasLanguage:@"ja" ignoreLanguages:@[@"zh"]];
+}
+
+- (BOOL)ys_hasLanguage:(NSString*)language
+{
+    return [self ys_hasLanguage:language ignoreLanguages:nil];
+}
+
+- (BOOL)ys_hasLanguage:(NSString*)language ignoreLanguages:(NSArray*)ignoreLanguages
+{
+    if (![language isKindOfClass:[NSString class]] || language.length == 0) {
+        return NO;
+    }
+    CFArrayRef attribute = CTFontDescriptorCopyAttribute((__bridge CTFontDescriptorRef)self.fontDescriptor, kCTFontLanguagesAttribute);
+    BOOL hasLang = CFArrayContainsValue(attribute, CFRangeMake(0, CFArrayGetCount(attribute)), (__bridge const void *)(language));
+    if (hasLang) {
+        for (NSString *ignoreLang in ignoreLanguages) {
+            if (CFArrayContainsValue(attribute, CFRangeMake(0, CFArrayGetCount(attribute)), (__bridge const void *)ignoreLang)) {
+                hasLang = NO;
+                break;
+            }
+        }
+    }
+    CFRelease(attribute);
+    return hasLang;
 }
 
 @end

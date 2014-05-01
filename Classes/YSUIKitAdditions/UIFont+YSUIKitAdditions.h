@@ -18,4 +18,9 @@ extern NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymb
 - (UIFont*)ys_convertedItalicFont;      // e.g. normal -> italic, bold -> bold italic
 - (UIFont*)ys_convertedBoldItalicFont;
 
+// The language identifier string should conform to the BCP 47 standard. ( http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes )
+- (BOOL)ys_hasJapaneseLanguage;
+- (BOOL)ys_hasLanguage:(NSString*)language;
+- (BOOL)ys_hasLanguage:(NSString*)language ignoreLanguages:(NSArray*)ignoreLanguages;
+
 @end
