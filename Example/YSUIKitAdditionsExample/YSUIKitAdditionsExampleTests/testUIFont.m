@@ -38,6 +38,8 @@
     return fonts;
 }
 
+#pragma mark - convert
+
 - (void)testConvertNormalFont
 {
     for (UIFont *font in [self allFont]) {
@@ -97,6 +99,18 @@
                     XCTAssert(0, @"font: %@, fontNames: %@", font.fontName, [UIFont fontNamesForFamilyName:font.familyName]);
                 }
             }
+        }
+    }
+}
+
+#pragma mark - has language
+
+- (void)testHasLanguage
+{
+    NSArray *jpFontNames = @[@"HiraKakuProN-W6", @"HiraKakuProN-W3", @"HiraMinProN-W6", @"HiraMinProN-W3"];
+    for (UIFont *font in [self allFont]) {
+        if ([font ys_hasJapaneseLanguage]) {
+            XCTAssert([jpFontNames containsObject:font.fontName], @"%@", font.fontName);
         }
     }
 }
