@@ -54,6 +54,7 @@
 //    NSLog(@"%@", [webView ys_html]);
 //    NSLog(@"%@", [webView ys_htmlHead]);
 //    NSLog(@"%@", [webView ys_htmlBody]);
+    NSLog(@"title: %@", [webView ys_title]);
     NSLog(@"OGP title: %@", [webView ys_ogpForProperty:YSUIWebViewOGPPropertyTitle]);
     NSLog(@"OGP type: %@", [webView ys_ogpForProperty:YSUIWebViewOGPPropertyType]);
     NSLog(@"OGP image: %@", [webView ys_ogpForProperty:YSUIWebViewOGPPropertyImage]);
