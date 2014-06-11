@@ -10,7 +10,7 @@
 
 @implementation UIWebView (YSUIKitAdditions)
 
-#pragma mark - get html
+#pragma mark - html
 
 - (NSString*)ys_html
 {
