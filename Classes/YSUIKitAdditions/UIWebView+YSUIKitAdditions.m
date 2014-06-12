@@ -57,13 +57,14 @@
             return nil;
     }
     
-    return [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"\
+    NSString *urlStr = [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"\
 var metas = document.getElementsByTagName('meta');\
 for (i = 0; i < metas.length; i++) {\
     if (metas[i].getAttribute(\"property\") == \"%@\") {\
         metas[i].getAttribute(\"content\");\
     }\
 }", propertyStr]];
+    return urlStr.length ? urlStr : nil;
 }
 
 - (NSString*)ys_appleTouchIconURLString
