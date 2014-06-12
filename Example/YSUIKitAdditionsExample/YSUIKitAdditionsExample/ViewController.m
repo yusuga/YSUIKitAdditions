@@ -28,8 +28,9 @@
     
     NSString *urlStr;
     urlStr = @"http://www.apple.com";
+    urlStr = @"http://google.com";
 //    urlStr = @"http://arigato-ipod.com";
-
+//    urlStr = @"http://arigato-ipod.com/introduction.html";
     [self.webView loadRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlStr]]];
 }
 
@@ -62,7 +63,7 @@
     NSLog(@"OGP type: %@", [webView ys_ogpForProperty:YSUIWebViewOGPPropertyType]);
     NSLog(@"OGP image: %@", [webView ys_ogpForProperty:YSUIWebViewOGPPropertyImage]);
     NSLog(@"OGP url: %@", [webView ys_ogpForProperty:YSUIWebViewOGPPropertyURL]);
-    NSLog(@"apple-touch-icon: %@", [webView ys_appleTouchIconURLString]);
+    NSLog(@"apple-touch-icon: %@", [webView ys_appleTouchIconURLStringOfLinkTag]);
 }
 
 @end
