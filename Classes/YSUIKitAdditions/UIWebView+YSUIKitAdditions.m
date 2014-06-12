@@ -73,16 +73,13 @@
  https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
  https://developer.apple.com/jp/devcenter/ios/library/documentation/userexperience/conceptual/mobilehig/WebClipIcons/WebClipIcons.html
  
- ex)
- http://www.apple.com/apple-touch-icon.png
- 
- http://google.com/
+ ex) http://google.com/
  <link href="/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
  <link href="/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
  <link href="/images/apple-touch-icon-57x57.png" rel="apple-touch-icon">
  */
 
-- (NSString*)ys_appleTouchIconURLString
+- (NSString*)ys_appleTouchIconURLStringOfLinkTag
 {
     NSString *js = @""
     "var links = document.getElementsByTagName('link');"
@@ -109,7 +106,7 @@
     "link;";
     NSString *href = [self stringByEvaluatingJavaScriptFromString:js];
     NSURL *url = [NSURL URLWithString:href];
-    if (url.host == nil) {
+    if (href.length && url.host == nil) {
         NSString *baseURLStr = [NSString stringWithFormat:@"%@://%@", self.request.URL.scheme, self.request.URL.host];
         url = [NSURL URLWithString:[baseURLStr stringByAppendingPathComponent:href]];
         href = url.absoluteString;
