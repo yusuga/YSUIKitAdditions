@@ -67,6 +67,15 @@ for (i = 0; i < metas.length; i++) {\
     return urlStr.length ? urlStr : nil;
 }
 
+/**
+ apple-touch-icon
+ https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+ https://developer.apple.com/jp/devcenter/ios/library/documentation/userexperience/conceptual/mobilehig/WebClipIcons/WebClipIcons.html
+ 
+ ex)
+ http://www.apple.com/apple-touch-icon.png
+ */
+
 - (NSString*)ys_appleTouchIconURLString
 {
     NSString *urlStr = [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"\
