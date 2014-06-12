@@ -26,7 +26,10 @@
     
     [self.button ys_setHitTestEdgeInsets:UIEdgeInsetsMake(-50.f, -50.f, -50.f, -50.f)];
     
-    NSString *urlStr = @"http://www.apple.com";
+    NSString *urlStr;
+    urlStr = @"http://www.apple.com";
+//    urlStr = @"http://arigato-ipod.com";
+
     [self.webView loadRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlStr]]];
 }
 
@@ -59,6 +62,7 @@
     NSLog(@"OGP type: %@", [webView ys_ogpForProperty:YSUIWebViewOGPPropertyType]);
     NSLog(@"OGP image: %@", [webView ys_ogpForProperty:YSUIWebViewOGPPropertyImage]);
     NSLog(@"OGP url: %@", [webView ys_ogpForProperty:YSUIWebViewOGPPropertyURL]);
+    NSLog(@"apple-touch-icon: %@", [webView ys_appleTouchIconURLString]);
 }
 
 @end
