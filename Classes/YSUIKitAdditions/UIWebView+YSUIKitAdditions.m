@@ -57,13 +57,14 @@
             return nil;
     }
     
-    NSString *urlStr = [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"\
-var metas = document.getElementsByTagName('meta');\
-for (i = 0; i < metas.length; i++) {\
-    if (metas[i].getAttribute(\"property\") == \"%@\") {\
-        metas[i].getAttribute(\"content\");\
-    }\
-}", propertyStr]];
+    NSString *js = [NSString stringWithFormat:@""
+                   "var metas = document.getElementsByTagName('meta');"
+                   "for (i = 0; i < metas.length; i++) {"
+                   "    if (metas[i].getAttribute(\"property\") == \"%@\") {"
+                   "        metas[i].getAttribute(\"content\");"
+                   "    }"
+                   "}", propertyStr];
+    NSString *urlStr = [self stringByEvaluatingJavaScriptFromString:js];
     return urlStr.length ? urlStr : nil;
 }
 
