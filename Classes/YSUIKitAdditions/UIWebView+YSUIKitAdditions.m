@@ -66,6 +66,18 @@ for (i = 0; i < metas.length; i++) {\
 }", propertyStr]];
 }
 
+- (NSString*)ys_appleTouchIconURLString
+{
+    NSString *urlStr = [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"\
+var links = document.getElementsByTagName('link');\
+for (i = 0; i < links.length; i++) {\
+    if (links[i].getAttribute(\"rel\").search(\"^apple-touch-icon[\\w]*\") != -1) {\
+        links[i].getAttribute(\"href\");\
+    }\
+}"]];
+    return urlStr.length ? urlStr : nil;
+}
+
 #pragma mark -
 
 - (void)ys_disableLongPressActionSheet

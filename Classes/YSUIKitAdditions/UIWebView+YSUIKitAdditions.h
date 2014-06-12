@@ -24,6 +24,7 @@ typedef NS_ENUM(NSUInteger, YSUIWebViewOGPProperty) {
 - (NSString*)ys_title;
 
 - (NSString*)ys_ogpForProperty:(YSUIWebViewOGPProperty)property;
+- (NSString*)ys_appleTouchIconURLString;
 
 - (void)ys_disableLongPressActionSheet;
 
