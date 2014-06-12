@@ -74,18 +74,46 @@ for (i = 0; i < metas.length; i++) {\
  
  ex)
  http://www.apple.com/apple-touch-icon.png
+ 
+ http://google.com/
+ <link href="/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+ <link href="/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+ <link href="/images/apple-touch-icon-57x57.png" rel="apple-touch-icon">
  */
 
 - (NSString*)ys_appleTouchIconURLString
 {
-    NSString *urlStr = [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"\
-var links = document.getElementsByTagName('link');\
-for (i = 0; i < links.length; i++) {\
-    if (links[i].getAttribute(\"rel\").search(\"^apple-touch-icon[\\w]*\") != -1) {\
-        links[i].getAttribute(\"href\");\
-    }\
-}"]];
-    return urlStr.length ? urlStr : nil;
+    NSString *js = @""
+    "var links = document.getElementsByTagName('link');"
+    "var link, size;"
+    "for (i = 0; i < links.length; i++) {"
+    "   if (links[i].getAttribute(\"rel\").search(\"^apple-touch-icon[\\w]*\") != -1) {"
+    "       var tempLink = links[i].getAttribute(\"href\");"
+    "       var tempSize = links[i].getAttribute(\"sizes\");"
+    "       if (tempSize) {"
+    "           if (size) {"
+    "               if (parseInt(size) < parseInt(tempSize)) {"
+    "                   link = tempLink;"
+    "                   size = tempSize;"
+    "               }"
+    "           } else {"
+    "               link = tempLink;"
+    "               size = tempSize;"
+    "           }"
+    "       } else if (!link) {"
+    "           link = tempLink;"
+    "       }"
+    "   }"
+    "}"
+    "link;";
+    NSString *href = [self stringByEvaluatingJavaScriptFromString:js];
+    NSURL *url = [NSURL URLWithString:href];
+    if (url.host == nil) {
+        NSString *baseURLStr = [NSString stringWithFormat:@"%@://%@", self.request.URL.scheme, self.request.URL.host];
+        url = [NSURL URLWithString:[baseURLStr stringByAppendingPathComponent:href]];
+        href = url.absoluteString;
+    }
+    return href.length ? href : nil;
 }
 
 #pragma mark -
