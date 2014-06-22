@@ -22,7 +22,7 @@
      */
     
     CGRect rect = CGRectMake(0.f, 0.f, size.width, size.height);
-    UIGraphicsBeginImageContext(rect.size);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.f);
     CGContextRef context = UIGraphicsGetCurrentContext();
     if (context == NULL) return nil;
     CGContextSetFillColorWithColor(context, [color CGColor]);
