@@ -10,7 +10,8 @@
 @import CoreText;
 
 #if DEBUG
-    #if 1
+    #if 0
+        #warning Enable debug log
         #define LOG_UIFont(...) NSLog(__VA_ARGS__)
     #endif
 #endif
