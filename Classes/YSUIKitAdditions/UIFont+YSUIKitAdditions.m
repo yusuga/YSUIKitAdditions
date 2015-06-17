@@ -170,7 +170,7 @@ NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTra
     }
     
     UIFontDescriptor *selfDescriptor = self.fontDescriptor;
-    UIFontDescriptorSymbolicTraits existingTraits;
+    UIFontDescriptorSymbolicTraits existingTraits = kNilOptions;
     if (convertedBold && convertedItalic) {
         existingTraits = UIFontDescriptorTraitBold | UIFontDescriptorTraitItalic;
     } else if (convertedBold) {
