@@ -10,11 +10,14 @@
 #import "UIView+YSUIKitAdditions.h"
 #import "UIWebView+YSUIKitAdditions.h"
 #import <YSProcessTimer/YSProcessTimer.h>
+#import "UIViewController+YSUIKitAdditions.h"
 
 @interface ViewController () <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+@property (nonatomic) NSTimer *timer;
 
 @end
 
@@ -32,17 +35,26 @@
 //    urlStr = @"http://arigato-ipod.com";
 //    urlStr = @"http://arigato-ipod.com/introduction.html";
     [self.webView loadRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlStr]]];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.
+                                                  target:self
+                                                selector:@selector(visibleLog)
+                                                userInfo:nil
+                                                 repeats:YES];
 }
 
 - (IBAction)buttonDidPush:(id)sender
 {
     NSLog(@"%s", __func__);
+}
+
+- (IBAction)unwindToTopViewController:(UIStoryboardSegue *)segue
+{
+}
+
+- (void)visibleLog
+{
+    NSLog(@"isVisible = %zd", [self ys_isVisible]);
 }
 
 #pragma mark - UIWebViewDelegate
