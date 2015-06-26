@@ -16,4 +16,6 @@
 - (UIEdgeInsets)ys_hitTestEdgeInsets;
 - (CGRect)ys_hitFrame;
 
+- (UIImage *)ys_image;
+
 @end

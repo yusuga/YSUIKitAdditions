@@ -34,4 +34,16 @@
     return img;
 }
 
+#pragma mark -
+
+- (UIImage *)ys_overlayImage:(UIImage *)image
+{
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.);
+    [self drawInRect:CGRectMake(0. ,0. , self.size.width, self.size.height)];
+    [image drawInRect:CGRectMake(0. ,0. , image.size.width, image. size.height)];
+    UIImage *overlayedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return overlayedImage;
+}
+
 @end

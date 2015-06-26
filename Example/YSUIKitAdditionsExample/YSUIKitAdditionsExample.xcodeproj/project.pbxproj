@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B78C2E71D8F48B9AD8B60C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EECC1A53944B43E6A5245860 /* libPods.a */; };
+		B80EF95F1B3CCAF600A5600C /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = B80EF95E1B3CCAF600A5600C /* ViewController2.m */; };
 		B82085661911445B00F42D6E /* UIFont+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B82085651911445B00F42D6E /* UIFont+YSUIKitAdditions.m */; };
 		B82085681911467F00F42D6E /* testUIFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B82085671911467F00F42D6E /* testUIFont.m */; };
 		B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8223484190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		7D049BF5A85A4B71986AC8A7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B80EF95D1B3CCAF600A5600C /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		B80EF95E1B3CCAF600A5600C /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		B82085641911445B00F42D6E /* UIFont+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B82085651911445B00F42D6E /* UIFont+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B82085671911467F00F42D6E /* testUIFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testUIFont.m; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				B84DE0701894E14200DD2DE8 /* Main.storyboard */,
 				B84DE0731894E14200DD2DE8 /* ViewController.h */,
 				B84DE0741894E14200DD2DE8 /* ViewController.m */,
+				B80EF95D1B3CCAF600A5600C /* ViewController2.h */,
+				B80EF95E1B3CCAF600A5600C /* ViewController2.m */,
 				B84DE0761894E14200DD2DE8 /* Images.xcassets */,
 				B84DE0651894E14200DD2DE8 /* Supporting Files */,
 			);
@@ -339,6 +344,7 @@
 				B84DE0751894E14200DD2DE8 /* ViewController.m in Sources */,
 				B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */,
 				B84DE0961894E23300DD2DE8 /* UIView+YSUIKitAdditions.m in Sources */,
+				B80EF95F1B3CCAF600A5600C /* ViewController2.m in Sources */,
 				B84DE06F1894E14200DD2DE8 /* AppDelegate.m in Sources */,
 				B84DE06B1894E14200DD2DE8 /* main.m in Sources */,
 			);

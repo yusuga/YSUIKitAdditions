@@ -64,4 +64,15 @@ static const NSString *KEY_HIT_TEST_EDGE_INSETS = @"HitTestEdgeInsets";
     return CGRectContainsPoint([self ys_hitFrame], point);
 }
 
+#pragma mark - Image
+
+- (UIImage *)ys_image
+{
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0.);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end
