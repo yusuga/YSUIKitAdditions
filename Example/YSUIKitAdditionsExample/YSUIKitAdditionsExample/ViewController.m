@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "UIView+YSUIKitAdditions.h"
 #import "UIWebView+YSUIKitAdditions.h"
-#import <YSProcessTimer/YSProcessTimer.h>
 #import "UIViewController+YSUIKitAdditions.h"
 
 @interface ViewController () <UIWebViewDelegate>

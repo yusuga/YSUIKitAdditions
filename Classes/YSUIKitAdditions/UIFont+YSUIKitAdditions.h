@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTraits symbol);
+UIKIT_EXTERN NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTraits symbol);
 
 @interface UIFont (YSUIKitAdditions)
 

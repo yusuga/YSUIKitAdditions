@@ -219,7 +219,7 @@ NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTra
 - (UIFont*)_ys_convertedNormalFont
 {
     UIFontDescriptor *selfDescriptor = self.fontDescriptor;
-    if (!(selfDescriptor.symbolicTraits & (UIFontDescriptorTraitBold | UIFontDescriptorTraitItalic))) {
+    if (selfDescriptor && !(selfDescriptor.symbolicTraits & (UIFontDescriptorTraitBold | UIFontDescriptorTraitItalic))) {
         LOG_UIFont(@"self: fotnName: %@, symbolicTraits: %@", self.fontName, NSStringFromUIFontDescriptorSymbolicTraits(selfDescriptor.symbolicTraits));
         return self;
     }
@@ -231,8 +231,8 @@ NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTra
         existingTraits = (selfDescriptor.symbolicTraits & ~UIFontDescriptorTraitBold) & (selfDescriptor.symbolicTraits & ~UIFontDescriptorTraitItalic);
     }
     
-    UIFont *convertedFont = [UIFont fontWithDescriptor:[selfDescriptor fontDescriptorWithSymbolicTraits:0] size:0.f];
-    if (!(convertedFont.fontDescriptor.symbolicTraits & (UIFontDescriptorTraitBold | UIFontDescriptorTraitItalic))) {
+    UIFont *convertedFont = [UIFont fontWithDescriptor:[selfDescriptor fontDescriptorWithSymbolicTraits:0] size:1.];
+    if (convertedFont && !(convertedFont.fontDescriptor.symbolicTraits & (UIFontDescriptorTraitBold | UIFontDescriptorTraitItalic))) {
         // convert success.
         LOG_UIFont(@"convert: %@ -> %@", self.fontName, convertedFont.fontName);
         return convertedFont;
