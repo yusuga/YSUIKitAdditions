@@ -12,6 +12,7 @@
 		B82085681911467F00F42D6E /* testUIFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B82085671911467F00F42D6E /* testUIFont.m */; };
 		B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8223484190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m */; };
 		B8223487190BB44F0081A8D0 /* testUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B8223486190BB44F0081A8D0 /* testUIColor.m */; };
+		B8277BD21C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8277BD11C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.m */; };
 		B83A35B21B3446C500CBC40D /* UIViewController+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A35B11B3446C500CBC40D /* UIViewController+YSUIKitAdditions.m */; };
 		B84DE05F1894E14200DD2DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84DE05E1894E14200DD2DE8 /* Foundation.framework */; };
 		B84DE0611894E14200DD2DE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84DE0601894E14200DD2DE8 /* CoreGraphics.framework */; };
@@ -50,6 +51,8 @@
 		B8223483190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B8223484190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B8223486190BB44F0081A8D0 /* testUIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testUIColor.m; sourceTree = "<group>"; };
+		B8277BD01C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+YSUIKitAdditions.h"; sourceTree = "<group>"; };
+		B8277BD11C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B83A35B01B3446C500CBC40D /* UIViewController+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B83A35B11B3446C500CBC40D /* UIViewController+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B84DE05B1894E14200DD2DE8 /* YSUIKitAdditionsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSUIKitAdditionsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +197,8 @@
 				B85817DB1948464C00C57FCD /* UIWebView+YSUIKitAdditions.m */,
 				B83A35B01B3446C500CBC40D /* UIViewController+YSUIKitAdditions.h */,
 				B83A35B11B3446C500CBC40D /* UIViewController+YSUIKitAdditions.m */,
+				B8277BD01C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.h */,
+				B8277BD11C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.m */,
 			);
 			name = YSUIKitAdditions;
 			path = ../../Classes/YSUIKitAdditions;
@@ -303,6 +308,7 @@
 				B84DE0751894E14200DD2DE8 /* ViewController.m in Sources */,
 				B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */,
 				B84DE0961894E23300DD2DE8 /* UIView+YSUIKitAdditions.m in Sources */,
+				B8277BD21C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.m in Sources */,
 				B80EF95F1B3CCAF600A5600C /* ViewController2.m in Sources */,
 				B84DE06F1894E14200DD2DE8 /* AppDelegate.m in Sources */,
 				B84DE06B1894E14200DD2DE8 /* main.m in Sources */,
