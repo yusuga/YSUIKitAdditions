@@ -28,6 +28,7 @@
 		B84DE0801894E14200DD2DE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84DE0621894E14200DD2DE8 /* UIKit.framework */; };
 		B84DE0881894E14200DD2DE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B84DE0861894E14200DD2DE8 /* InfoPlist.strings */; };
 		B84DE0961894E23300DD2DE8 /* UIView+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B84DE0951894E23300DD2DE8 /* UIView+YSUIKitAdditions.m */; };
+		B856EAA61C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B856EAA51C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.m */; };
 		B85817DC1948464C00C57FCD /* UIWebView+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B85817DB1948464C00C57FCD /* UIWebView+YSUIKitAdditions.m */; };
 		B8B0EC6618BEE494008E0B75 /* UIImage+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B0EC6518BEE494008E0B75 /* UIImage+YSUIKitAdditions.m */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,8 @@
 		B84DE0871894E14200DD2DE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B84DE0941894E23300DD2DE8 /* UIView+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B84DE0951894E23300DD2DE8 /* UIView+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YSUIKitAdditions.m"; sourceTree = "<group>"; };
+		B856EAA41C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+YSUIKitAdditions.h"; sourceTree = "<group>"; };
+		B856EAA51C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B85817DA1948464C00C57FCD /* UIWebView+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B85817DB1948464C00C57FCD /* UIWebView+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B8B0EC6418BEE494008E0B75 /* UIImage+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YSUIKitAdditions.h"; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				B83A35B11B3446C500CBC40D /* UIViewController+YSUIKitAdditions.m */,
 				B8277BD01C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.h */,
 				B8277BD11C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.m */,
+				B856EAA41C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.h */,
+				B856EAA51C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.m */,
 			);
 			name = YSUIKitAdditions;
 			path = ../../Classes/YSUIKitAdditions;
@@ -308,6 +313,7 @@
 				B84DE0751894E14200DD2DE8 /* ViewController.m in Sources */,
 				B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */,
 				B84DE0961894E23300DD2DE8 /* UIView+YSUIKitAdditions.m in Sources */,
+				B856EAA61C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.m in Sources */,
 				B8277BD21C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.m in Sources */,
 				B80EF95F1B3CCAF600A5600C /* ViewController2.m in Sources */,
 				B84DE06F1894E14200DD2DE8 /* AppDelegate.m in Sources */,
