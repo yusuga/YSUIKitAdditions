@@ -75,4 +75,16 @@ static const NSString *KEY_HIT_TEST_EDGE_INSETS = @"HitTestEdgeInsets";
     return image;
 }
 
+#pragma mark - Animation
+
++ (void)ys_defaultKeyboardAnimateWithAnimations:(void (^)(void))animations
+                                     completion:(void (^)(BOOL finished))completion
+{
+    [UIView animateWithDuration:0.25
+                          delay:0.
+                        options:7 << 16
+                     animations:animations
+                     completion:completion];
+}
+
 @end

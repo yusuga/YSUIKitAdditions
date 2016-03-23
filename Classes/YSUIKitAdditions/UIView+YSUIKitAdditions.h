@@ -18,4 +18,7 @@
 
 - (UIImage *)ys_image;
 
++ (void)ys_defaultKeyboardAnimateWithAnimations:(void (^)(void))animations
+                                     completion:(void (^)(BOOL finished))completion;
+
 @end
