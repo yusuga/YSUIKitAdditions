@@ -10,6 +10,7 @@
 #import "UIView+YSUIKitAdditions.h"
 #import "UIWebView+YSUIKitAdditions.h"
 #import "UIViewController+YSUIKitAdditions.h"
+#import "UIButton+YSUIKitAdditions.h"
 
 @interface ViewController () <UIWebViewDelegate>
 
@@ -27,6 +28,8 @@
     [super viewDidLoad];
     
     [self.button ys_setHitTestEdgeInsets:UIEdgeInsetsMake(-50.f, -50.f, -50.f, -50.f)];
+    [self.button ys_setBackgroundColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.button ys_setBackgroundColor:[UIColor greenColor] forState:UIControlStateHighlighted];
     
     NSString *urlStr;
     urlStr = @"http://www.apple.com";

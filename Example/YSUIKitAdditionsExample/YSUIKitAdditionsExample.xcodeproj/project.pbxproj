@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B804BCA21CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B804BCA11CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.m */; };
 		B80EF95F1B3CCAF600A5600C /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = B80EF95E1B3CCAF600A5600C /* ViewController2.m */; };
 		B82085661911445B00F42D6E /* UIFont+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B82085651911445B00F42D6E /* UIFont+YSUIKitAdditions.m */; };
 		B82085681911467F00F42D6E /* testUIFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B82085671911467F00F42D6E /* testUIFont.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B804BCA01CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YSUIKitAdditions.h"; sourceTree = "<group>"; };
+		B804BCA11CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B80EF95D1B3CCAF600A5600C /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		B80EF95E1B3CCAF600A5600C /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		B82085641911445B00F42D6E /* UIFont+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+YSUIKitAdditions.h"; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 				B8277BD11C8978BD00C60229 /* UIRefreshControl+YSUIKitAdditions.m */,
 				B856EAA41C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.h */,
 				B856EAA51C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.m */,
+				B804BCA01CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.h */,
+				B804BCA11CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.m */,
 			);
 			name = YSUIKitAdditions;
 			path = ../../Classes/YSUIKitAdditions;
@@ -310,6 +315,7 @@
 				B83A35B21B3446C500CBC40D /* UIViewController+YSUIKitAdditions.m in Sources */,
 				B8B0EC6618BEE494008E0B75 /* UIImage+YSUIKitAdditions.m in Sources */,
 				B85817DC1948464C00C57FCD /* UIWebView+YSUIKitAdditions.m in Sources */,
+				B804BCA21CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.m in Sources */,
 				B84DE0751894E14200DD2DE8 /* ViewController.m in Sources */,
 				B8223485190BB37A0081A8D0 /* UIColor+YSUIKitAdditions.m in Sources */,
 				B84DE0961894E23300DD2DE8 /* UIView+YSUIKitAdditions.m in Sources */,
