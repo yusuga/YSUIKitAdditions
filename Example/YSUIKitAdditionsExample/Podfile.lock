@@ -1,0 +1,10 @@
+PODS:
+  - YSNSFoundationAdditions (0.0.19)
+
+DEPENDENCIES:
+  - YSNSFoundationAdditions
+
+SPEC CHECKSUMS:
+  YSNSFoundationAdditions: b4e2cc3202518b5c70a65a528bc7dd75c068afd0
+
+COCOAPODS: 0.39.0

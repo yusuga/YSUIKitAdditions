@@ -9,6 +9,7 @@
 #import "ViewController2.h"
 #import "UIView+YSUIKitAdditions.h"
 #import "UIImage+YSUIKitAdditions.h"
+#import "UITabBarItem+YSUIKitAdditions.h"
 
 @interface ViewController2 ()
 
@@ -17,6 +18,11 @@
 @end
 
 @implementation ViewController2
+
+- (void)awakeFromNib
+{
+    self.tabBarItem = [UITabBarItem ys_fittedTitleItemWithTitle:@"long long long long long" image:nil];
+}
 
 - (void)viewDidLoad
 {

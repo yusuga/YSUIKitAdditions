@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25FEED29E69B11145B4D9105 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFF98AC849AD62C2D6FE8B8 /* libPods.a */; };
 		B804BCA21CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B804BCA11CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.m */; };
+		B804BCA51CB47F3D00FACE24 /* UITabBarItem+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B804BCA41CB47F3D00FACE24 /* UITabBarItem+YSUIKitAdditions.m */; };
 		B80EF95F1B3CCAF600A5600C /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = B80EF95E1B3CCAF600A5600C /* ViewController2.m */; };
 		B82085661911445B00F42D6E /* UIFont+YSUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B82085651911445B00F42D6E /* UIFont+YSUIKitAdditions.m */; };
 		B82085681911467F00F42D6E /* testUIFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B82085671911467F00F42D6E /* testUIFont.m */; };
@@ -45,8 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E729FBF60B479EF26E7E2EF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		ABFF98AC849AD62C2D6FE8B8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B804BCA01CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B804BCA11CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YSUIKitAdditions.m"; sourceTree = "<group>"; };
+		B804BCA31CB47F3D00FACE24 /* UITabBarItem+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+YSUIKitAdditions.h"; sourceTree = "<group>"; };
+		B804BCA41CB47F3D00FACE24 /* UITabBarItem+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B80EF95D1B3CCAF600A5600C /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		B80EF95E1B3CCAF600A5600C /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		B82085641911445B00F42D6E /* UIFont+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+YSUIKitAdditions.h"; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		B85817DB1948464C00C57FCD /* UIWebView+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+YSUIKitAdditions.m"; sourceTree = "<group>"; };
 		B8B0EC6418BEE494008E0B75 /* UIImage+YSUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YSUIKitAdditions.h"; sourceTree = "<group>"; };
 		B8B0EC6518BEE494008E0B75 /* UIImage+YSUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YSUIKitAdditions.m"; sourceTree = "<group>"; };
+		E0E048813B406F18EE2C2C28 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +102,7 @@
 				B84DE0611894E14200DD2DE8 /* CoreGraphics.framework in Frameworks */,
 				B84DE0631894E14200DD2DE8 /* UIKit.framework in Frameworks */,
 				B84DE05F1894E14200DD2DE8 /* Foundation.framework in Frameworks */,
+				25FEED29E69B11145B4D9105 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		588AB008C8A4B7A83AB90870 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E729FBF60B479EF26E7E2EF /* Pods.debug.xcconfig */,
+				E0E048813B406F18EE2C2C28 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B84DE0521894E14200DD2DE8 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +136,7 @@
 				B84DE0831894E14200DD2DE8 /* YSUIKitAdditionsExampleTests */,
 				B84DE05D1894E14200DD2DE8 /* Frameworks */,
 				B84DE05C1894E14200DD2DE8 /* Products */,
+				588AB008C8A4B7A83AB90870 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +156,7 @@
 				B84DE0601894E14200DD2DE8 /* CoreGraphics.framework */,
 				B84DE0621894E14200DD2DE8 /* UIKit.framework */,
 				B84DE07D1894E14200DD2DE8 /* XCTest.framework */,
+				ABFF98AC849AD62C2D6FE8B8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,6 +228,8 @@
 				B856EAA51C9D5BBB00724225 /* UISearchBar+YSUIKitAdditions.m */,
 				B804BCA01CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.h */,
 				B804BCA11CB3CDB900FACE24 /* UIButton+YSUIKitAdditions.m */,
+				B804BCA31CB47F3D00FACE24 /* UITabBarItem+YSUIKitAdditions.h */,
+				B804BCA41CB47F3D00FACE24 /* UITabBarItem+YSUIKitAdditions.m */,
 			);
 			name = YSUIKitAdditions;
 			path = ../../Classes/YSUIKitAdditions;
@@ -221,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B84DE08D1894E14200DD2DE8 /* Build configuration list for PBXNativeTarget "YSUIKitAdditionsExample" */;
 			buildPhases = (
+				B955B04BB0DBDB44389401EA /* Check Pods Manifest.lock */,
 				B84DE0571894E14200DD2DE8 /* Sources */,
 				B84DE0581894E14200DD2DE8 /* Frameworks */,
 				B84DE0591894E14200DD2DE8 /* Resources */,
+				BE52852088F23969D0E1CA08 /* Embed Pods Frameworks */,
+				EE727B583989507B83FE16F2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,12 +330,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B955B04BB0DBDB44389401EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE52852088F23969D0E1CA08 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE727B583989507B83FE16F2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B84DE0571894E14200DD2DE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B82085661911445B00F42D6E /* UIFont+YSUIKitAdditions.m in Sources */,
+				B804BCA51CB47F3D00FACE24 /* UITabBarItem+YSUIKitAdditions.m in Sources */,
 				B83A35B21B3446C500CBC40D /* UIViewController+YSUIKitAdditions.m in Sources */,
 				B8B0EC6618BEE494008E0B75 /* UIImage+YSUIKitAdditions.m in Sources */,
 				B85817DC1948464C00C57FCD /* UIWebView+YSUIKitAdditions.m in Sources */,
@@ -447,6 +520,7 @@
 		};
 		B84DE08E1894E14200DD2DE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E729FBF60B479EF26E7E2EF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -461,6 +535,7 @@
 		};
 		B84DE08F1894E14200DD2DE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E048813B406F18EE2C2C28 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
