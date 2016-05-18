@@ -251,6 +251,18 @@ NSString *NSStringFromUIFontDescriptorSymbolicTraits(UIFontDescriptorSymbolicTra
     return nil;
 }
 
+- (UIFont *)ys_proportionalNumbersFont
+{
+    /*
+     *  iOS 9 Proportional Numbers
+     *  http://useyourloaf.com/blog/ios-9-proportional-numbers.html
+     */
+    NSDictionary * fontAttributes = @{UIFontDescriptorFeatureSettingsAttribute: @[@{UIFontFeatureTypeIdentifierKey: @(kNumberSpacingType),
+                                                                                    UIFontFeatureSelectorIdentifierKey: @(kMonospacedNumbersSelector)}]};
+    return [UIFont fontWithDescriptor:[[self fontDescriptor] fontDescriptorByAddingAttributes:fontAttributes]
+                                 size:self.pointSize];
+}
+
 #pragma mark - language
 
 - (BOOL)ys_hasJapaneseLanguage
